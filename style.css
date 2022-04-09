@@ -97,8 +97,13 @@ main{
 .drinkCard p{
   flex-shrink: 1;
   max-height :150px;
+  scrollbar-width: none;
+  -ms-overflow-style:none;
   overflow-y:auto;
   text-align: justify;
+}
+p::-webkit-scrollbar{
+  display:none;
 }
 .swiper-3d .swiper-slide-shadow-left,
 .swiper-3d .swiper-slide-shadow-right{
