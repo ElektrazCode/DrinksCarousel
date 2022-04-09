@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="height=device-height, width=device-width">
+		<title>Drink Caroussel</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+		<header>
+			<h1>Choose a Liquor</h1>
+			<input type="text" name="" value="">
+			<button type="button" name="button">Get Cocktails</button>
+		</header>
+
+		<main>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="drinkCard">
+							<h2>Bartender</h2>
+							<img src="DrinkShaker.jpg" alt="">
+							<h3>Instructions</h3>
+							<p>Preparing your drink...</p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination">
+				</div>
+			</div>
+		</main>
+
+		<script type="text/javascript" src="main.js"></script>
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+		<script>
+			let swiper = new Swiper(".swiper-container", {
+				effect: "coverflow",
+				grabCursor: true,
+				centeredSlides: true,
+				slidesPerView: "auto",
+				coverflowEffect: {
+					rotate: 0,
+					stretch: 0,
+					depth: 100,
+					modifier: 2,
+					slideShadows: true,
+				},
+				pagination: {
+					el: ".swiper-pagination",
+				},
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,124 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  width:100vw;
+  height:100vh;
+  background-image: url("bar2.jpg");
+  background-size: cover;
+  font-family: "Playfair Display";
+}
+
+/******************************************
+/* MAIN LAYOUT
+/*******************************************/
+header{
+  width:100%;
+  height:15%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+header h1{
+  color: white;
+  margin:0;
+}
+header h1, header input, header button{
+  margin: 0 1%;
+}
+header button, header input{
+  padding: 0.5em 1em;
+  width: 150px;
+  font-family: "Playfair Display";
+}
+
+
+
+
+/******************************************
+/* CAROUSSEL
+/*******************************************/
+main{
+  position: relative;
+  width:100%;
+  min-height:85vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden;
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 350px;
+  height: 570px;
+  background:silver;
+  border-radius: 30px;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+  filter: blur(4px);
+  padding: 2%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.drinkCard{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items: center;
+  text-align:center;
+}
+.drinkCard h3{
+  padding-bottom:1em;
+}
+.drinkCard img{
+  display: block;
+  margin: 1em auto;
+  height: 250px;
+  width: 250px;
+  border-radius:50%;
+  overflow:hidden;
+}
+.drinkCard p{
+  flex-shrink: 1;
+  max-height :150px;
+  overflow-y:auto;
+  text-align: justify;
+}
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right{
+  background-image: none; 
+}
+.swiper-slide-active{
+  filter:blur(0);
+  background:white;
+}
+.swiper-pagination-bullet{
+  background-color: silver;
+}
+
+.swiper-pagination-bullet-active{
+  background-color:white;
+}
+
+
+@media only screen and (max-width: 600px){
+  header{
+    flex-direction:column;
+  }
+}
