@@ -6,7 +6,7 @@ This is a Web-based appilcation with prospective implementation as mobile app.
 It retrieves a list of drinks from an API. It asks the user to enter a kind of liquor, retrieves and filters cocktails recipes from an api and displays a carousel of drinks for the user to browse through.<br>
 Link to Live Project: https://drinksCarousel.netlify.app 
 # How It's Made 
-<b>Tech used:</b> html, css and javaScript<br>
+<b>Tech Used:</b> html, css and javaScript<br>
 <b>Plugins:</b> Swiper.js<br> 
 <b>API Source:</b> https://thecocktaildb.com/api
 # Optimizations
